@@ -1,9 +1,10 @@
 pipeline {
     agent any 
     stages {
-        stage('clean') { 
+        stage('clean and clean') { 
             steps {
                 bat "mvn clean"
+                bat "echo 'qwerty'"
             }
         }
         stage('test') { 
